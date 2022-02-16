@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import ListEmployee from '../views/ListEmployee.vue'
+import vcclass from '../views/vcclas.vue'
 
 Vue.use(VueRouter)
 
@@ -9,6 +11,18 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path:'/Employee',
+    name:'Employee',
+    component: ListEmployee
+
+  },
+  {
+    path:'/cdclass',
+    name:'cdclass',
+    component: vcclass
+
   },
   {
     path: '/about',
